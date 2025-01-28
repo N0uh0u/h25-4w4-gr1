@@ -1,0 +1,17 @@
+// Menu principal
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  &__li {
+    display: inline-block;
+  }
+    &__a {
+      color: #333;
+      text-decoration: none;
+      padding: 2px 5px;
+    }
+  }
+
+
+  
