@@ -14,22 +14,43 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: 4w4-Nouhou
 */
 /*//////////////////////////////////
+Base
+//////////////////////////////////*/
+a {
+  color: rgba(170, 85, 170, 0.6666666667);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.1);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.3);
+}
+a:focus {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*//////////////////////////////////
 Variables
 //////////////////////////////////*/
 /*/////////////////////////////////
 composants
 /////////////////////////////////*/
 .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.menu__li {
-  display: inline-block;
+@media screen and (max-width: 500px) {
+  .menu {
+    flex-direction: column;
+    gap: 6px 0;
+  }
 }
 .menu__a {
-  color: #333;
-  text-decoration: none;
   padding: 2px 5px;
 }
 
@@ -40,6 +61,9 @@ composants
 }
 .carte--grande {
   padding: 40px;
+}
+.carte--petite {
+  padding: 20px;
 }
 .carte__image img {
   max-width: 100%;
@@ -71,16 +95,76 @@ composants
   background-color: #0056b3;
 }
 
+.recherche {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.recherche__input {
+  height: 1.8rem;
+  border: none;
+  outline: none;
+  border-right: 1px dotted;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.recherche__input:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.recherche__img {
+  padding: 0 3px;
+}
+
 /*/////////////////////////////////
 Layout
 /////////////////////////////////*/
+.burger {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger:checked ~ .entete__nav {
+  display: flex;
+}
+
 .entete {
   display: flex;
+  flex: 1 1 50%;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(245, 220, 235);
 }
 .entete__nav {
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 0 2rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .entete__nav {
+    display: none;
+    background-color: rgb(245, 220, 235);
+    position: absolute;
+    flex-direction: column;
+    gap: 30px 0;
+    height: 50vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+  }
 }
 .entete__logo {
   margin: 5px;
@@ -94,4 +178,21 @@ Layout
 .hero {
   min-height: 100vh;
   background-image: url("images/maldives-1993704.jpg");
+}
+.hero__contenue {
+  display: flex;
+  flex-direction: column;
+}
+.hero__titre {
+  text-shadow: #5c85b6 2.5px 2.5px 2px;
+}
+.hero__description {
+  max-width: 50rem;
+}
+.hero__bouton {
+  max-width: 10rem;
+  background-color: #00dcff;
+  font-weight: bold;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */

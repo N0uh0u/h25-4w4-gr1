@@ -1,0 +1,19 @@
+.recherche{
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+    &__input{
+			height: 1.8rem;
+			border:none;
+			outline: none;
+			border-right: 1px dotted;
+			background-color: rgba(0, 0, 0, 0.02);
+			&:hover{
+				background-color: rgba(0, 0, 0, 0.06);
+			}
+    }
+    &__img{
+			padding: 0 3px;
+    }
+}
