@@ -169,6 +169,7 @@ Layout
 }
 .entete__logo {
   margin: 5px;
+  z-index: 99;
 }
 .entete__recherche {
   display: block;
@@ -194,6 +195,7 @@ Layout
 }
 .hero__titre {
   text-shadow: #5c85b6 2.5px 2.5px 2px;
+  padding-top: 3rem;
 }
 .hero__description {
   max-width: 50rem;
@@ -204,4 +206,30 @@ Layout
   font-weight: bold;
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.formulaire {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  padding: 20px;
+  margin: 0px;
+  width: 75%;
+  margin: -40px;
+  box-shadow: 0 4px 8px gray;
+}
+.formulaire__contenu {
+  justify-content: center;
+}
+.formulaire__contenu form {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.formulaire__champ input {
+  border: 2px solid #57e6eb;
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
 }/*# sourceMappingURL=style.css.map */
