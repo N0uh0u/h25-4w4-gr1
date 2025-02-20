@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: 4w4-Nouhou Bah Club_voyage
+Theme Name: 4w4-Nouhou Bah
 Theme URI: https://wordpress.org/themes/twentytwenty/
 Author: Nouhou Bah
-Author URI: https://github.com/N0uh0u/h25-4w4-gr1
+Author URI: GITHUB
 Description: Thème de base développé dans le cadre du cours 4w4 
 Version: 1.0
 Requires at least: 6.2
@@ -11,7 +11,7 @@ Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: 4w4-Nouhou Club_voyage
+Text Domain: 4w4-Nouhou
 */
 /*//////////////////////////////////
 Base
@@ -170,6 +170,9 @@ Layout
 .entete__logo {
   margin: 5px;
   z-index: 99;
+}
+.entete__logo-img {
+  max-width: 7rem;
 }
 .entete__recherche {
   display: block;
