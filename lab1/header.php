@@ -11,7 +11,11 @@
 <header>
         <div class="entete ">
             <figure class="entete__logo">
-                <img src="https://s2.svgbox.net/octicons.svg?ic=logo-github-bold&color=000" width="50" height="50">
+                <?php
+                    if (function_exists('the_custom_logo')) {
+                        the_custom_logo();
+                    }
+                ?>
             </figure>
             <label for="chk__burger" class="burger">
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32">

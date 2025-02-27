@@ -2,7 +2,10 @@
     margin: 0 auto;
     max-width: 1350px;
 }
-
+.populaire .global{
+    display: flex;
+    flex-wrap: wrap;
+}
 .hero{
     min-height: 100vh;
     background-image: url("images/maldives-1993704.jpg");

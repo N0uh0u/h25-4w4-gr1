@@ -188,6 +188,11 @@ Layout
   max-width: 1350px;
 }
 
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .hero {
   min-height: 100vh;
   background-image: url("images/maldives-1993704.jpg");
@@ -209,6 +214,37 @@ Layout
   font-weight: bold;
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*
+  --------------------------------- Layout du pied de page
+*/
+footer {
+  background-color: rgb(236, 136, 13);
+  color: #000;
+}
+
+.piedpage {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__adresse {
+  flex: 0 0 40%;
+}
+.piedpage__s1__description {
+  flex: 1 0 400px;
 }
 
 .formulaire {

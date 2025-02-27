@@ -1,28 +1,7 @@
 <?php get_header(); ?>
-<h1>front page</h1>
 <body>
-    <section class="hero">
-        <div class="hero__contenue global">
-        <h1 class="hero__titre">
-            <?php bloginfo('name'); ?>
-        </h1>
-        <h1 class="hero__titre">
-            <?php bloginfo('description'); ?>
-        </h1>
-        <a href="" class="hero__couriel">
-            placeholder@hotmail.com
-        </a>
-        <button class="hero__bouton">
-            inscription
-        </button>
-        <div class="hero_icone-app">
-            <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000000" width="20" height="20">
-            <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000000" width="20" height="20">
-            <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=000" width="20" height="20">
-        </div>
-    </div>
-    </section>
-    <section class="formulaire">
+    <h1>Single</h1>
+    <!-- <section class="formulaire">
         <div class="formulaire__contenu">
             <form>
                 <div class="formulaire__champ">
@@ -50,7 +29,7 @@
                 </div>
                
                
-               
+                -->
             </form>
         </div>
     </section>
