@@ -5,6 +5,8 @@
 .populaire .global{
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
 }
 .hero{
     min-height: 100vh;

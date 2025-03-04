@@ -7,6 +7,7 @@
   
     &--grande {
       padding: 40px;
+      // max-width: 23rem;
     }
 
     &--petite {
@@ -49,5 +50,11 @@
         background-color: #0056b3;
       }
     }
+  }
+  .post-categories{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+
   }
   

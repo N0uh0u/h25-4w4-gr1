@@ -96,6 +96,12 @@ composants
   background-color: #0056b3;
 }
 
+.post-categories {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .recherche {
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
@@ -191,6 +197,8 @@ Layout
 .populaire .global {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
 
 .hero {
