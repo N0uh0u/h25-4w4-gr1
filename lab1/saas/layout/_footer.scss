@@ -3,13 +3,12 @@
 */
 
 footer{
-    background-color: rgb(236, 136, 13);
+    background-color: $couleur__header;
     color : #000;
+    padding-bottom: 5rem;
   }
   
   .piedpage{
-      display: flex;
-      flex-direction: column;
       &__s1{
           display: flex;
           flex-wrap: wrap;
@@ -19,12 +18,9 @@ footer{
               & .menu { //ul
                   display : flex;
                   flex-direction: column;
-              }
-  
-  
+              }  
           }
-          &__adresse{
-              flex : 0 0 40%;
+          &__adresse{          
               &__coord{}
               &__recherche{}
           }

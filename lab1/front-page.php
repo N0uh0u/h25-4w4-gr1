@@ -4,7 +4,7 @@
         <div class="hero__contenu global">
             <h1 class="hero__titre">Club de voyage</h1>
             <p class="hero__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quo, veritatis eum incidunt earum ex libero officia nemo repudiandae molestias, vitae omnis magnam exercitationem provident ratione impedit vel culpa consequatur.
+                Un site qui vous permet de trouver votre destination de rêves
             </p>
             <p class="hero__courriel">
                 <a href="#">info@cmaisonneuve.qc.ca</a>
@@ -21,6 +21,7 @@
         </div>
 
     </section>
+    
     <section class="galerie">
         <div class="galerie global">
             <figure class="galerie__figure">
@@ -40,6 +41,7 @@
             </figure>
         </div>
     </section>
+    
     <section class="populaire">
         <div class=" boiteflex global">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -95,13 +95,11 @@ composants
 .carte__bouton:hover {
   background-color: #0056b3;
 }
-
-.post-categories {
-  color: white;
+.carte .post-categories {
+  list-style-type: none;
   display: flex;
   justify-content: space-evenly;
 }
-
 .recherche {
   border: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
@@ -228,14 +226,11 @@ Layout
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(236, 136, 13);
+  background-color: rgb(245, 220, 235);
   color: #000;
+  padding-bottom: 5rem;
 }
 
-.piedpage {
-  display: flex;
-  flex-direction: column;
-}
 .piedpage__s1 {
   display: flex;
   flex-wrap: wrap;
@@ -247,9 +242,6 @@ footer {
 .piedpage__s1__externe .menu {
   display: flex;
   flex-direction: column;
-}
-.piedpage__s1__adresse {
-  flex: 0 0 40%;
 }
 .piedpage__s1__description {
   flex: 1 0 400px;

@@ -50,11 +50,12 @@
         background-color: #0056b3;
       }
     }
+    &  .post-categories{
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+      a{}
+    }
   }
-  .post-categories{
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
 
-  }
   
