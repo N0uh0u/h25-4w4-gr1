@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/*
+Theme Name: theme-4w4-Nouhou Bah
+Theme URI: https://wordpress.org/themes/twentytwenty/
+Author: Nouhou Bah
+Author URI: GITHUB
+Description: Thème de base développé dans le cadre du cours 4w4 
+Version: 1.0
+Requires at least: 6.2
+Tested up to: 6.2
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-4w4-Nouhou
+*/
+/*//////////////////////////////////
+Base
+//////////////////////////////////*/
+a {
+  color: rgba(170, 85, 170, 0.6666666667);
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.1);
+}
+a:visited {
+  color: rgba(0, 0, 0, 0.3);
+}
+a:focus {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/*//////////////////////////////////
+Variables
+//////////////////////////////////*/
+/*/////////////////////////////////
+composants
+/////////////////////////////////*/
+#menu-principal, #menu-principal-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 1rem;
+}
+@media screen and (max-width: 500px) {
+  #menu-principal, #menu-principal-1 {
+    flex-direction: column;
+    gap: 6px 0;
+  }
+}
+#menu-principal__a, #menu-principal-1__a {
+  padding: 2px 5px;
+}
+
+.carte {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+.carte--grande {
+  padding: 40px;
+}
+.carte--petite {
+  padding: 20px;
+}
+.carte__image img {
+  max-width: 20rem;
+  max-height: 10rem;
+  border-radius: 8px;
+}
+.carte__contenu {
+  margin-top: 15px;
+}
+.carte__titre {
+  font-size: 24px;
+  color: #333;
+}
+.carte__description {
+  font-size: 16px;
+  color: #666;
+}
+.carte__bouton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.carte__bouton--actif {
+  background-color: #0056b3;
+}
+.carte__bouton:hover {
+  background-color: #0056b3;
+}
+.carte .post-categories {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.carte .post-categories a {
+  color: black;
+}
+
+.recherche {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 1rem;
+}
+.recherche__input {
+  height: 1.8rem;
+  border: none;
+  outline: none;
+  border-right: 1px dotted;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.recherche__input:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.recherche__img {
+  padding: 0 3px;
+}
+
+/*/////////////////////////////////
+Layout
+/////////////////////////////////*/
+.burger {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .burger {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 99;
+  }
+}
+
+.chk__burger {
+  display: none;
+}
+
+.chk__burger:checked ~ .entete__nav {
+  display: flex;
+}
+
+.entete {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 220, 235);
+}
+.entete__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  gap: 0 2rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+  .entete__nav {
+    display: none;
+    background-color: rgb(245, 220, 235);
+    position: absolute;
+    flex-direction: column;
+    line-height: 3rem;
+    height: 50vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+  }
+}
+.entete__logo {
+  margin: 5px;
+  z-index: 99;
+}
+.entete__logo-img {
+  max-width: 7rem;
+}
+.entete__recherche {
+  display: block;
+}
+@media screen and (max-width: 500px) {
+  .entete__recherche {
+    display: none;
+  }
+}
+
+.global {
+  margin: 0 auto;
+  max-width: 1350px;
+}
+
+.populaire .global {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.hero {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+.hero__contenue {
+  display: flex;
+  flex-direction: column;
+}
+.hero__titre {
+  text-shadow: #5c85b6 2.5px 2.5px 2px;
+  padding-top: 3rem;
+}
+.hero__description {
+  max-width: 50rem;
+}
+.hero__bouton {
+  max-width: 10rem;
+  background-color: #00dcff;
+  font-weight: bold;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*
+  --------------------------------- Layout du pied de page
+*/
+footer {
+  background-color: rgb(245, 220, 235);
+  color: #000;
+  padding-bottom: 5rem;
+}
+
+.piedpage__s1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rem;
+}
+.piedpage__s1__liens h3 {
+  margin-bottom: 0;
+}
+.piedpage__s1__externe {
+  flex: 0 0 20%;
+}
+.piedpage__s1__externe .menu {
+  display: flex;
+  flex-direction: column;
+}
+.piedpage__s1__description {
+  flex: 1 0 400px;
+}
+.piedpage__s3 {
+  padding-top: 1rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.formulaire {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  padding: 20px;
+  margin: 0px;
+  width: 75%;
+  margin: -40px;
+  box-shadow: 0 4px 8px gray;
+}
+.formulaire__contenu {
+  justify-content: center;
+}
+.formulaire__contenu form {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+.formulaire__champ input {
+  border: 2px solid #57e6eb;
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+}/*# sourceMappingURL=style.css.map */

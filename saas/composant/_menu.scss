@@ -1,0 +1,22 @@
+// Menu principal
+#menu-principal, #menu-principal-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 1rem;
+  @media screen and (max-width: $point__rupture) {
+    flex-direction: column;
+    gap: 6px 0;
+  }
+  &__li {
+  }
+    &__a {
+      padding: 2px 5px;
+    }
+  }
+
+
+  

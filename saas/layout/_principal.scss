@@ -1,0 +1,32 @@
+.global{
+    margin: 0 auto;
+    max-width: 1350px;
+}
+.populaire .global{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+.hero{
+    min-height: 100vh;
+    background-repeat:no-repeat ;
+    &__contenue{
+        display: flex;
+        flex-direction: column;
+    }
+    &__titre{
+        text-shadow:#5c85b6 2.5px 2.5px 2px;
+        padding-top: 3rem;
+    }
+    &__description{
+        max-width: 50rem;
+    }
+    &__bouton{
+        max-width: 10rem;
+        background-color: #00dcff;
+        font-weight: bold;
+        border-radius: 25px;
+        border:1px solid rgba(0, 0, 0, .5);
+    }
+}
