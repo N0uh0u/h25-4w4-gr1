@@ -9,7 +9,7 @@
         <div class="hero__contenu global" >
             <h1 class="hero__titre"><?php echo bloginfo('name')?></h1>
             <p class="hero__description">
-                Un site qui vous permet de trouver votre destination de rêves
+                Un site qui vous permet de trouver votre destination de =
             </p>
             <p class="hero__courriel">
                 <a href="#">info@cmaisonneuve.qc.ca</a>
