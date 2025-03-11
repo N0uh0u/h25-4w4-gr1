@@ -7,7 +7,7 @@
     ?>
     <section class="hero" style="background-image:url(<?php echo $hero_background ?>); color:<?php $hero_couleur?>">
         <div class="hero__contenu global" >
-            <h1 class="hero__titre">Club de voyage</h1>
+            <h1 class="hero__titre"><?php echo bloginfo('name')?></h1>
             <p class="hero__description">
                 Un site qui vous permet de trouver votre destination de rêves
             </p>
