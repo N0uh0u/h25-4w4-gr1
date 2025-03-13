@@ -1,5 +1,7 @@
 <footer>
     <?php $footer_mission = get_theme_mod('footer_mission', 'default title')?>
+    <?php $footer_adresse = get_theme_mod('footer_adresse', 'default title')?>
+    <?php $footer_telephone = get_theme_mod('footer_telephone', 'default title')?>
     <div class="piedpage global">
         <section class="piedpage__s1"> 
             <div class="piedpage__s1__liens">
@@ -13,8 +15,8 @@
             <div class="piedpage__s1__adresse">
                 <div class="piedpage__s1__adresse__coord">
                 <h3>Location</h3>
-                <p>3800 R. Sherbrooke E, Montréal, QC H1X 2A2</p>
-                <p>(514) 254-7131</p>
+                <p><?php echo $footer_adresse?></p>
+                <p><?php echo $footer_telephone?></p>
                 </div>
                 <div class="piedpage__s1__adresse__recherche">
                     <?php get_search_form();   ?>

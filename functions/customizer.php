@@ -95,5 +95,27 @@ function theme_31w_customize_register($wp_customize) {
       'section' => 'footer_section',
       'type' => 'textarea',
     ));
+   ////////////////////////////////////////////////////////////////////////////////////////// adresse
+   $wp_customize->add_setting('footer_adresse', array(
+    'default' => __('5800 Sherbrooke-est - Montréal (Québec) H1X 2A2', 'theme_31w'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_adresse', array(
+    'label' => __('adresse', 'theme_31w'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
+   ////////////////////////////////////////////////////////////////////////////////////////// telephone
+   $wp_customize->add_setting('footer_telephone', array(
+    'default' => __('(514) 254-7131', 'theme_31w'),
+    'sanitize_callback' => 'sanitize_text_field'
+  ));
+
+  $wp_customize->add_control('footer_telephone', array(
+    'label' => __('adresse', 'theme_31w'),
+    'section' => 'footer_section',
+    'type' => 'text',
+  ));
   }
   add_action('customize_register', 'theme_31w_customize_register');
