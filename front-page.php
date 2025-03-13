@@ -1,7 +1,12 @@
 <?php get_header(); ?>
 <h1>Front-page</h1>
 <?php 
+////////////////////////////Texte
     $hero_auteur = get_theme_mod('hero_auteur', 'Default Title');
+    $hero_adresse = get_theme_mod('hero_adresse', 'Default Title');
+    $hero_courriel = get_theme_mod('hero_courriel', 'Default Title');
+    $hero_description = get_theme_mod('hero_description', 'Default Title');
+///////////////////////////Style
     $hero_background = get_theme_mod('hero_background', 'Default Title');
     $hero_couleur_texte = get_theme_mod('hero_couleur_texte', '#fff');
     $hero_couleur_icones = substr(get_theme_mod('hero_couleur_icones', '#fff'),1);
@@ -10,13 +15,13 @@
         <div class="hero__contenu global" style="color:<?php echo $hero_couleur_texte?>">
             <h1 class="hero__titre"><?php echo bloginfo('name')?></h1>
             <p class="hero__description">
-                Un site qui vous permet de trouver votre destination de =
+            <?php echo $hero_description ?>
             </p>
             <p class="hero__courriel">
-                <a href="#">info@cmaisonneuve.qc.ca</a>
+                <a href="#"><?php echo $hero_courriel ?> </a>
             </p>
             <p class="hero__adresse">
-                5800 Sherbrooke-est - Montréal (Québec) H1X 2A2
+               Adresse: <?php echo $hero_adresse ?>
             </p>
             <div class="hero__icone" >
                 <img src="https://s2.svgbox.net/social.svg?ic=facebook&color=<?php echo $hero_couleur_icones?>" width="20" height="20">
