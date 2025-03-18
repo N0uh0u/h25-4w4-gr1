@@ -130,6 +130,10 @@ composants
 /*/////////////////////////////////
 Layout
 /////////////////////////////////*/
+.header {
+  height: 7rem;
+}
+
 .burger {
   display: none;
 }

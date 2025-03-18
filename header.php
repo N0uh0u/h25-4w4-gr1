@@ -9,7 +9,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="entete">
             <figure class="entete__logo">
             <?php
