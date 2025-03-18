@@ -1,4 +1,4 @@
-## Lab 2
+## TP1
 ## Cours de conception d'interface
 Créer une page d'acceuil pour un site web de voyage
 Auteur: Nouhou Bah
