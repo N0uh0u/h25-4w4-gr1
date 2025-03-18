@@ -14,7 +14,7 @@ function theme_31w_customize_register($wp_customize) {
     $wp_customize->add_control('hero_description', array(
       'label' => __('description', 'theme_31w'),
       'section' => 'hero_section',
-      'type' => 'text',
+      'type' => 'textarea',
     ));
     ////////////////////////////////////////////////////////////////////////////////////////// courriel
     $wp_customize->add_setting('hero_courriel', array(

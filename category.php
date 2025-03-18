@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<h1>category</h1>
 <p> <?php  echo category_description()?> </p>
 <h1><?php  single_cat_title()?> </h1>
     <section class="populaire">

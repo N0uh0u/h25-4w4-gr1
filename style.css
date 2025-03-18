@@ -155,7 +155,7 @@ Layout
   flex: 1 1 50%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(245, 220, 235);
+  background-color: rgb(59, 97, 142);
 }
 .entete__nav {
   display: flex;
@@ -168,7 +168,7 @@ Layout
 @media screen and (max-width: 500px) {
   .entete__nav {
     display: none;
-    background-color: rgb(245, 220, 235);
+    background-color: rgb(59, 97, 142);
     position: absolute;
     flex-direction: column;
     line-height: 3rem;
@@ -233,9 +233,9 @@ Layout
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(245, 220, 235);
+  background-color: rgb(59, 97, 142);
   color: #000;
-  padding-bottom: 5rem;
+  padding-bottom: 13rem;
 }
 
 .piedpage__s1 {
