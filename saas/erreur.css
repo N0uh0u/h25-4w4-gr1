@@ -1,0 +1,17 @@
+.erreur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 6.5rem;
+}
+.erreur-desc {
+  font-style: italic;
+}
+.erreur-boutton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}/*# sourceMappingURL=erreur.css.map */
