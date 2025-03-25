@@ -1,10 +1,15 @@
 <?php
-function theme_31w_customize_register($wp_customize) {
+function theme_31w_customize_register($wp_customize) {    
     // Le code pour ajouter des sections, des réglages et des contrôles ira ici.
     $wp_customize->add_section('hero_section', array(
-      'title' => __('Hero Section', 'theme_31w'),
+      'title' => __('Hero', 'theme_31w'),
       'priority' => 30,
     ));
+    $wp_customize->add_section('erreur', array(
+      'title' => __('Page erreur', 'theme_31w'),
+      'priority' => 30,
+    ));
+
     ////////////////////////////////////////////////////////////////////////////////////////// Description
     $wp_customize->add_setting('hero_description', array(
       'default' => __('Un site qui vous permet de trouver votre destination de reves et de vous y rendre en un moment', 'theme_31w'),
@@ -79,7 +84,8 @@ function theme_31w_customize_register($wp_customize) {
         'label' => __('couleur des icones', 'theme_31w'),
         'section' => 'hero_section',
     )));
-      ////////////////////////////////////////////////////////////////////////////////////////// footer
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// footer
     $wp_customize->add_section('footer_section', array(
       'title' => __('Section pied de page', 'theme_31w'),
       'priority' => 30,
@@ -117,5 +123,18 @@ function theme_31w_customize_register($wp_customize) {
     'section' => 'footer_section',
     'type' => 'text',
   ));
+     
+
+      ////////////////////////////////////////////////////////////////////////////////////////// Description     
+          $wp_customize->add_setting('404_description', array(
+            'default' => __('description de la page 404', 'theme_31w'),
+            'sanitize_callback' => 'sanitize_text_field'
+          ));
+        
+          $wp_customize->add_control('404_description', array(
+            'label' => __('description', 'theme_31w'),
+            'section' => 'erreur',
+            'type' => 'textarea',
+          ));       
   }
   add_action('customize_register', 'theme_31w_customize_register');
