@@ -2,34 +2,52 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    color: rgb(243, 180, 6);
+
     &-titre{
         padding-top: 20rem;
         padding-bottom: 6rem;
         font-size: 2rem;
+        text-shadow: 2px 2px black;
     }
     &-desc{
         font-style:italic;
         padding-bottom: 3rem;
+        text-shadow: 2px 2px black;
     }
     &-boutton{
-        padding: 1px 20px;
-        background-color: #007bff;
+        padding: 15px 20px;
+        background-color:rgb(243, 180, 6);
         color: #fff;
         border: none;
-        border-radius: 50px;
+        border-radius: 20px;
         cursor: pointer;   
     }
+    &-search{
+        border-bottom:  rgb(243, 180, 6) solid 1px;
+    }
     &-search .recherche {
+        border: none;
         position: static;
+    }
+    &-search .recherche .recherche__bouton {
+        visibility: hidden;
     }
     &-destination{
         padding-top:2rem;
     }
-    &-icones{}
 }
 #menu-destination{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+#menu-destination .menu-item{
+    background-color: rgb(243, 180, 6);
+    color: black;
+    font-size: 2rem;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
 }
