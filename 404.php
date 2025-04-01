@@ -11,9 +11,20 @@ $description_404 = get_theme_mod('404_description', 'Default Title');
     <div class="erreur-desc">
         <p> <?php echo $description_404 ?> </p>
     </div>
-    <!-- <div class="erreur-boutton">
+    <div class="erreur-boutton">
         <a href="">retour a la page d'acceuil</a>
-    </div> -->
+    </div>
+    <div class="destination">
+        <?php wp_nav_menu(array(
+            'menu' => 'destination',
+            'container' => 'nav',
+            'container_clas' => '404_destinations'
+        )) ?>
+    </div>
+    <div class="search-erreur">
+        <?php get_search_form()?>
+    </div>
+    
     <div class="erreur-icones">
         <?php get_template_part("gabarit/icones")?>
     </div>

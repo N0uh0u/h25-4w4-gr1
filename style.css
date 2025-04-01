@@ -131,13 +131,17 @@ composants
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 6.5rem;
+}
+.erreur-titre {
+  padding-top: 20rem;
+  padding-bottom: 6rem;
+  font-size: 2rem;
 }
 .erreur-desc {
   font-style: italic;
 }
 .erreur-boutton {
-  padding: 10px 20px;
+  padding: 1px 20px;
   background-color: #007bff;
   color: #fff;
   border: none;
