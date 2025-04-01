@@ -14,19 +14,15 @@ $description_404 = get_theme_mod('404_description', 'Default Title');
     <div class="erreur-boutton">
         <a href="">retour a la page d'acceuil</a>
     </div>
-    <div class="destination">
+    <div class="erreur-destination">
         <?php wp_nav_menu(array(
             'menu' => 'destination',
             'container' => 'nav',
             'container_clas' => '404_destinations'
         )) ?>
     </div>
-    <div class="search-erreur">
+    <div class="erreur-search">
         <?php get_search_form()?>
-    </div>
-    
-    <div class="erreur-icones">
-        <?php get_template_part("gabarit/icones")?>
     </div>
 </section>
 <?php get_footer();?>

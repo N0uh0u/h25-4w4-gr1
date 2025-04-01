@@ -139,6 +139,7 @@ composants
 }
 .erreur-desc {
   font-style: italic;
+  padding-bottom: 3rem;
 }
 .erreur-boutton {
   padding: 1px 20px;
@@ -148,6 +149,20 @@ composants
   border-radius: 50px;
   cursor: pointer;
 }
+.erreur-search .recherche {
+  position: static;
+  color: yellow;
+}
+.erreur-destination {
+  padding-top: 2rem;
+}
+#menu-destination {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 /*/////////////////////////////////
 Layout
 /////////////////////////////////*/
