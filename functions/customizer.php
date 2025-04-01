@@ -5,10 +5,7 @@ function theme_31w_customize_register($wp_customize) {
       'title' => __('Hero', 'theme_31w'),
       'priority' => 30,
     ));
-    $wp_customize->add_section('erreur', array(
-      'title' => __('Page erreur', 'theme_31w'),
-      'priority' => 30,
-    ));
+
 
     ////////////////////////////////////////////////////////////////////////////////////////// Description
     $wp_customize->add_setting('hero_description', array(
@@ -124,17 +121,42 @@ function theme_31w_customize_register($wp_customize) {
     'type' => 'text',
   ));
      
-
-      ////////////////////////////////////////////////////////////////////////////////////////// Description     
-          $wp_customize->add_setting('404_description', array(
-            'default' => __('description de la page 404', 'theme_31w'),
+//////////////////////////////////////////////////////////////////////////////404
+  $wp_customize->add_section('erreur', array(
+    'title' => __('Page erreur', 'theme_31w'),
+    'priority' => 30,
+  ));
+      ////////////////////////////////////////////////////////////////////////////////////////// titre   
+          $wp_customize->add_setting('404_titre', array(
+            'default' => __('titre de la page 404', 'theme_31w'),
             'sanitize_callback' => 'sanitize_text_field'
           ));
         
-          $wp_customize->add_control('404_description', array(
-            'label' => __('description', 'theme_31w'),
+          $wp_customize->add_control('404_titre', array(
+            'label' => __('titre', 'theme_31w'),
             'section' => 'erreur',
-            'type' => 'textarea',
+            'type' => 'text',
           ));       
+          ////////////////////////////////////////////////////////////////////////////////////////// Description          
+          $wp_customize->add_setting('404_description', array(
+              'default' => __('description de la page 404', 'theme_31w'),
+              'sanitize_callback' => 'sanitize_text_field'
+            ));
+            
+            $wp_customize->add_control('404_description', array(
+                'label' => __('description', 'theme_31w'),
+                'section' => 'erreur',
+                'type' => 'textarea',
+              ));       
+              ////////////////////////////////////////////////////////////////////////////////////////// background          
+              $wp_customize->add_setting('404_background', array(
+                'default' => '',
+                'sanitize_callback' => 'esc_url_raw',
+              ));
+            
+              $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, '404_background', array(
+                  'label' => __('Image en background', 'theme_31w'),
+                  'section' => 'erreur',
+              )));
   }
   add_action('customize_register', 'theme_31w_customize_register');
