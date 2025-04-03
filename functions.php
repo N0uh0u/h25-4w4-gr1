@@ -1,4 +1,5 @@
 <?php
+include_once get_template_directory(). '/functions/genere-list-categorie.php';
 // Définir le chemin vers le dossier "functions"
 $functions_dir = get_template_directory() . '/functions/';
 

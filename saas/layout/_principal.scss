@@ -30,3 +30,18 @@
         border:1px solid rgba(0, 0, 0, .5);
     }
 }
+.categorie__ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    &__li{
+        background-color: #00dcff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+    }
+}
+.destination{
+    text-align: center;
+}
