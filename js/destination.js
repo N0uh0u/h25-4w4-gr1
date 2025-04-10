@@ -2,7 +2,6 @@
     let categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
     const domaine = window.location.href
     const categorie__ul__li= document.querySelectorAll(".categorie__ul__li");
-    // const titre_accordeon = document.querySelectorAll(".titre_accordeon");
 
     mon_fetch(apiUrl = `${domaine}wp-json/wp/v2/posts?categories=${categoryId}`);
     categorie__ul__li.forEach(li => {
@@ -12,11 +11,7 @@
             mon_fetch(apiUrl);
         })
     })
-    // titre_accordeon.forEach(h3 =>{
-    //     h3.addEventListener("mousedown", function(){
-    //         console.log("test")
-    //     })
-    // })
+ 
     function mon_fetch(apiUrl){
     fetch(apiUrl)
         .then(response => response.json())
@@ -26,9 +21,15 @@
             data.forEach(article => {
                 const articleElement = document.createElement('div');
                 articleElement.innerHTML = `
-                    <h3 class="titre_accordeon">${article.title.rendered}</h3>
-                    <p>${article.excerpt.rendered}</p>
-                    <a href="${article.link}">...</a>
+                    <h3>${article.title.rendered}</h3>
+
+                    <input type="radio" id="rad-${article.id}" name="destination" class="destination__rad">
+
+                    <div class="destination__p"${article.excerpt.rendered}
+                        <a class="destination__a" href="${article.link}">
+                            ...
+                        </a>
+                    </div>
                 `;
                 destinationList .appendChild(articleElement);
             });

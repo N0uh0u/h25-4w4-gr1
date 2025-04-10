@@ -196,8 +196,16 @@ composants
   color: white;
 }
 
-.destination {
-  text-align: center;
+.destination__p {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.destination__rad:checked ~ .destination__p {
+  max-height: 300px;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 /*/////////////////////////////////
