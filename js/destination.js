@@ -28,7 +28,7 @@
                 articleElement.innerHTML = `
                     <h3 class="titre_accordeon">${article.title.rendered}</h3>
                     <p>${article.excerpt.rendered}</p>
-                    <a href="${article.link}">Lire plus</a>
+                    <a href="${article.link}">...</a>
                 `;
                 destinationList .appendChild(articleElement);
             });
