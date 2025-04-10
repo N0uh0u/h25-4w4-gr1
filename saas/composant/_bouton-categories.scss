@@ -12,16 +12,29 @@
     }
 }
 .destination{
+    &__div{
+        display: flex;
+        align-items: center;
+    }
+    &__h3{
+        background-color: #00dcff;
+        padding: 10px 20px;
+        width: 60%;
+        border: none;
+        border-radius: 5px;
+        }
+    &__rad{
+        display: none;
+    }
     &__p{
         max-height: 0px;
         overflow: hidden;
-        transition: max-height 0.3s ease;
-        
+        transition: max-height 0.3s ease;    
     }
     &__rad:checked ~ &__p{
-    max-height: 300px;
-    margin: 0;
-    padding: 10px 20px;
-    border-radius: 4px;
+        max-height: 300px;
+        margin: 0;
+        padding: 10px 20px;
+        border-radius: 4px;
    }
 }

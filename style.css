@@ -196,6 +196,20 @@ composants
   color: white;
 }
 
+.destination__div {
+  display: flex;
+  align-items: center;
+}
+.destination__h3 {
+  background-color: #00dcff;
+  padding: 10px 20px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+}
+.destination__rad {
+  display: none;
+}
 .destination__p {
   max-height: 0px;
   overflow: hidden;
