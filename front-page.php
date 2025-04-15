@@ -11,6 +11,11 @@ $hero_couleur_texte = get_theme_mod('hero_couleur_texte', '#fff');
     <div class="hero__carrousel" style="background-image: url('<?php echo $hero_background[0] ?>');"></div>
     <div class="hero__carrousel" style="background-image: url('<?php echo $hero_background[1] ?>');"></div>
     <div class="hero__carrousel" style="background-image: url('<?php echo $hero_background[2] ?>');"></div>
+    <div class="hero__radio">
+        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="0" checked = "checked" >
+        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="1" >
+        <input class="hero__radio__input" type="radio" name="carrousel" data-id_carrousel="2" >
+    </div>
     <div class="hero__contenu global" style="color:<?php echo $hero_couleur_texte?>">
             <?php get_template_part("gabarit/hero"); ?>
         <div class="hero__icone" >

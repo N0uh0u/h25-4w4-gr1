@@ -254,7 +254,7 @@ Layout
   flex: 1 1 50%;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(59, 97, 142);
+  background-color: rgb(56, 92, 136);
 }
 .entete__nav {
   display: flex;
@@ -267,7 +267,7 @@ Layout
 @media screen and (max-width: 500px) {
   .entete__nav {
     display: none;
-    background-color: rgb(59, 97, 142);
+    background-color: rgb(56, 92, 136);
     position: absolute;
     flex-direction: column;
     line-height: 3rem;
@@ -296,6 +296,7 @@ Layout
 .global {
   margin: 0 auto;
   max-width: 1350px;
+  font-size: 2rem;
 }
 
 .populaire .global {
@@ -309,7 +310,7 @@ Layout
   --------------------------------- Layout du pied de page
 */
 footer {
-  background-color: rgb(59, 97, 142);
+  background-color: rgb(56, 92, 136);
   color: #000;
   padding-bottom: 13rem;
 }
@@ -394,4 +395,25 @@ footer {
   min-height: 100vh;
   width: 100%;
   background-size: contain;
-}/*# sourceMappingURL=style.css.map */
+  z-index: -1;
+  opacity: 0;
+}
+.hero__carrousel--active {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  background-size: contain;
+  z-index: -1;
+  opacity: 1;
+}
+.hero__radio {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}

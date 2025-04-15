@@ -28,7 +28,7 @@
 
                     <div class="destination__p"${article.excerpt.rendered}
                         <a class="destination__a" href="${article.link}">
-                            <img src="https://s2.svgbox.net/hero-solid.svg?ic=dots-horizontal&color=000" width="32" height="32">
+                            <img src="https://s2.svgbox.net/hero-solid.svg?ic=dots-horizontal&color=000" width="24" height="24">
                         </a>
                     </div>
                 `;
