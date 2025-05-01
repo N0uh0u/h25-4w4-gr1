@@ -8,7 +8,7 @@ $hero_couleur_texte = get_theme_mod('hero_couleur_texte', '#fff');
 ?>
 
 <section class="hero">
-    <div class="hero__carrousel "style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
+    <div class="hero__carrousel  hero__carrousel--active "style="background-image: url(<?php echo $hero_background[0] ?>)"></div>
     <div class="hero__carrousel" style="background-image: url('<?php echo $hero_background[1] ?>');"></div>
     <div class="hero__carrousel" style="background-image: url('<?php echo $hero_background[2] ?>');"></div>
     <div class="hero__radio">
@@ -33,12 +33,6 @@ $hero_couleur_texte = get_theme_mod('hero_couleur_texte', '#fff');
         <?php endwhile; endif; ?>
     </div>
 </section>
-<!-- <ul class="categorie__ul">
-    <li data-category-id="12" class="categorie__ul__li">Europe</li>
-    <li data-category-id="13" class="categorie__ul__li">Asie</li>
-    <li data-category-id="14" class="categorie__ul__li">Afrique</li>
-</ul> -->
-<!-- section destinations REST-API -->
  <?php categories_liste("destination");?>
 <section class="destination">
     <h2 class="destination__titre">Articles de la catégorie</h2>

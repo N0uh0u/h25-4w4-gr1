@@ -27,7 +27,7 @@
         background-repeat:no-repeat ;
         min-height: 100vh;
         width: 100%;
-        background-size: contain;
+        background-size: cover;
         z-index: -1;
         opacity: 0;
         &--active{ //.hero__carrousel--active
@@ -37,7 +37,6 @@
             background-repeat:no-repeat ;
             min-height: 100vh;
             width: 100%;
-            background-size: contain;
             z-index: -1;
             opacity: 1;
         }

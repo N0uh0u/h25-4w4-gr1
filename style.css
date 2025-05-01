@@ -394,7 +394,7 @@ footer {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
-  background-size: contain;
+  background-size: cover;
   z-index: -1;
   opacity: 0;
 }
@@ -405,7 +405,6 @@ footer {
   background-repeat: no-repeat;
   min-height: 100vh;
   width: 100%;
-  background-size: contain;
   z-index: -1;
   opacity: 1;
 }
@@ -417,6 +416,13 @@ footer {
   justify-content: center;
   gap: 2rem;
 }
+.hero__animation {
+  display: none;
+}
+.hero__animation--active {
+  display: block;
+}
+
 .hero__titre, .hero__description {
   position: relative;
   animation: anim_contenu ease-out 1s forwards;
