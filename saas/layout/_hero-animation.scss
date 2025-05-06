@@ -7,7 +7,7 @@
     }
 }
 .hero{
-    &__titre,&__description{
+    &__titre,&__description,&__courriel{
         position: relative;
         animation: anim_contenu ease-out 1s forwards;
     }
@@ -17,6 +17,10 @@
     &__description{
         transform: translateX(-2000px);
         animation-delay: 1s;
+    }
+    &__courriel{
+        transform: translateX(-2000px);
+        animation-delay: 2s;
     }
 }
 @keyframes anim_contenu{

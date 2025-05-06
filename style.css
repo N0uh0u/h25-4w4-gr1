@@ -296,7 +296,6 @@ Layout
 .global {
   margin: 0 auto;
   max-width: 1350px;
-  font-size: 2rem;
 }
 
 .populaire .global {
@@ -366,6 +365,7 @@ footer {
 }
 
 .hero {
+  font-size: 2rem;
   min-height: 100vh;
   position: relative;
 }
@@ -423,7 +423,7 @@ footer {
   display: block;
 }
 
-.hero__titre, .hero__description {
+.hero__titre, .hero__description, .hero__courriel {
   position: relative;
   animation: anim_contenu ease-out 1s forwards;
 }
@@ -433,6 +433,10 @@ footer {
 .hero__description {
   transform: translateX(-2000px);
   animation-delay: 1s;
+}
+.hero__courriel {
+  transform: translateX(-2000px);
+  animation-delay: 2s;
 }
 
 @keyframes anim_contenu {

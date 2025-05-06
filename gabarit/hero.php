@@ -29,10 +29,12 @@ $hero_description = get_theme_mod('hero_description', 'Default Title');
             bouton3
             </p>
 </div>
+<div class="hero__animation">
             <p class="hero__courriel">
                 <a href="#"><?php echo $hero_courriel ?> </a>
             </p>
             <p class="hero__adresse">
-               Adresse: <?php echo $hero_adresse ?>
+              Adresse: <?php echo $hero_adresse ?>
             </p> 
             <p class="auteur">Auteur :<?php echo $hero_auteur ?></p>
+          </div>
