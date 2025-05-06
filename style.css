@@ -436,7 +436,7 @@ footer {
   display: block;
 }
 
-.hero__titre, .hero__description, .hero__courriel {
+.hero__titre, .hero__description, .hero__courriel, .hero__adresse, .hero__auteur {
   position: relative;
   animation: anim_contenu ease-out 1s forwards;
 }
@@ -449,7 +449,15 @@ footer {
 }
 .hero__courriel {
   transform: translateX(-2000px);
+  animation-delay: 1.5s;
+}
+.hero__adresse {
+  transform: translateX(-2000px);
   animation-delay: 2s;
+}
+.hero__auteur {
+  transform: translateX(-2000px);
+  animation-delay: 2.5s;
 }
 
 @keyframes anim_contenu {
