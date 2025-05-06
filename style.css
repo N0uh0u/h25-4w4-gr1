@@ -293,6 +293,10 @@ Layout
   }
 }
 
+.vague__top {
+  height: 45px;
+}
+
 .global {
   margin: 0 auto;
   max-width: 1350px;
@@ -340,6 +344,10 @@ footer {
   padding-top: 1rem;
   position: absolute;
   right: 1rem;
+}
+
+.vague__bottom {
+  height: 25rem;
 }
 
 .formulaire {
