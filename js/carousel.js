@@ -4,15 +4,17 @@
      let hero__animation = document.querySelectorAll(".hero__animation")
      console.log(hero__carrousel.length)
      console.log("hero__radio__input = " , hero__radio__input.length)
-   
+
+     
      hero__radio__input.forEach(elm =>{
-         elm.addEventListener('mousedown',function(){
+         elm.addEventListener('mousedown',function animation(){      
              parcourir_carrousel()
              parcourir_animation()
              console.log(elm.dataset.id_carrousel) 
              hero__carrousel[elm.dataset.id_carrousel].classList.add("hero__carrousel--active")
              hero__animation[elm.dataset.id_carrousel].classList.add("hero__animation--active")
-         })
+             setInterval(animation,5000)
+            })
      })
 
      function parcourir_carrousel(){

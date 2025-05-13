@@ -12,24 +12,36 @@ $hero_description = get_theme_mod('hero_description', 'Default Title');
             <p class="hero__description">
             <?php echo $hero_description ?>
             </p>
-</div>
-<div class="hero__animation">
-    <h1 class="hero__titre">
-      bouton2
-    </h1>
-            <p class="hero__description">
-            bouton2
+            <p class="hero__courriel">
+                <a href="#"><?php echo $hero_courriel ?> </a>
+            </p>
+            <p class="hero__adresse">
+               Adresse: <?php echo $hero_adresse ?>
+            </p> 
+            <p class="hero__auteur">
+              Auteur :<?php echo $hero_auteur ?>
             </p>
 </div>
 <div class="hero__animation">
-    <h1 class="hero__titre">
-      bouton3
-    </h1>
+    <h1 class="hero__titre"><?php echo bloginfo('name')?></h1>
             <p class="hero__description">
-            bouton3
+            <?php echo $hero_description ?>
+            </p>
+            <p class="hero__courriel">
+                <a href="#"><?php echo $hero_courriel ?> </a>
+            </p>
+            <p class="hero__adresse">
+               Adresse: <?php echo $hero_adresse ?>
+            </p> 
+            <p class="hero__auteur">
+              Auteur :<?php echo $hero_auteur ?>
             </p>
 </div>
-<div class="hero__animation hero__animation--active">
+<div class="hero__animation">
+    <h1 class="hero__titre"><?php echo bloginfo('name')?></h1>
+            <p class="hero__description">
+            <?php echo $hero_description ?>
+            </p>
             <p class="hero__courriel">
                 <a href="#"><?php echo $hero_courriel ?> </a>
             </p>

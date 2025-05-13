@@ -421,6 +421,11 @@ footer {
   z-index: -1;
   opacity: 1;
 }
+.hero__icone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .hero__radio {
   position: absolute;
   bottom: 0;

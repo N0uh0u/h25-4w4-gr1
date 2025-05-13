@@ -43,6 +43,11 @@
             opacity: 1;
         }
     }
+    &__icone{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
     &__radio{
         position: absolute;
         bottom: 0;
