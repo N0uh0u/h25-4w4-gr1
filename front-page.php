@@ -36,7 +36,9 @@ $hero_couleur_texte = get_theme_mod('hero_couleur_texte', '#fff');
  <?php categories_liste("destination");?>
 <section class="destination">
     <h2 class="destination__titre">Articles de la catégorie</h2>
-    <div class="destination__list"></div>
+    <div class="destination__list">
+        <!-- add dataset data-method=categories -->
+    </div>
 </section>
 <?php get_footer(); ?>
 </body>
