@@ -8,4 +8,14 @@
     gap: 0.5rem;
     justify-content: center;
 }
-
+.vague__pays{
+    position: relative;
+    transform: scaleY(3);
+    z-index: -99;
+}
+.categorie__ul__pays{
+    justify-content: space-around;
+    list-style-type: none;
+    display: flex
+;
+}
