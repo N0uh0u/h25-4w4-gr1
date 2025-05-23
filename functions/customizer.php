@@ -63,6 +63,8 @@ function theme_31w_customize_register($wp_customize) {
           'section' => 'hero_section',
       )));
     }
+
+    // Background carrousel
     $wp_customize->add_setting('hero_b', array(
       'default' => '',
       'sanitize_callback' => 'esc_url_raw',

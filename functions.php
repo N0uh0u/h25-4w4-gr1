@@ -6,7 +6,8 @@ $functions_dir = get_template_directory() . '/functions/';
 // Liste de fichiers a inclure
 $functions_files = array(
   'customizer.php',
-  'options.php'
+  'options.php',
+  'svg.php'
 );
 
 // Inclure les fichiers spécifiques

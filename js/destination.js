@@ -26,10 +26,14 @@
                 data.forEach(article => {
                     const articleElement = document.createElement('div');
                     articleElement.innerHTML = `
-                        <h3>${article.title.rendered}</h3>
-                        <p>${article.excerpt.rendered}</p>
+                   <h3 class="destination__h3">${article.title.rendered}</h3>
+                    <label class="destination__label" for="rad-${article.id}"><img src="https://s2.svgbox.net/hero-solid.svg?ic=dots-horizontal&color=000" width="32" height="32">
+                    <input type="radio" id="rad-${article.id}" name="destination" class="destination__rad">
 
-                        <a href="${article.link}">Lire plus</a>
+                    <div class="destination__p"${article.excerpt.rendered}
+                        <a class="destination__a" href="${article.link}">
+                            <img src="https://s2.svgbox.net/hero-solid.svg?ic=dots-horizontal&color=000" width="32" height="32">
+                        </a>
                     `;
                     destinationList .appendChild(articleElement);
                 });
